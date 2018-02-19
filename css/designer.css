@@ -1,0 +1,65 @@
+html {
+	height: 100vh;
+	width: 100%;
+}
+
+body {
+	height: 90%;
+	margin: 0px;
+	background: black;
+	font-family: 'Roboto';
+}
+
+.logo {
+	position: fixed;
+	width: 5em;
+	height: 5em;
+	top: 2%;
+	left: 1%;
+}
+
+.name {
+	position: fixed;
+	font-size: 2em;
+  	margin: 0px;
+	top: 5%;
+	right: -6%;
+	color: white;
+  	transform: rotate(-90deg);
+}
+
+.page {
+	display: grid;
+	grid-template-columns: 15% 70% 15%;
+}
+
+.leftBar, .rightBar{
+	width: 100%;
+	height: 99vh;
+}
+
+.mainSection {
+	width: auto;
+	height: 99vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.mikePic {
+	filter: grayscale(75%);
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	height: 40em;
+}
+
+.aboutMe {
+	margin: 0 10% 10% 10%;
+	color: white;
+	font-size: 2em;
+}
+
+
+
+
