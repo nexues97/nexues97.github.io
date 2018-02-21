@@ -3,16 +3,15 @@ html {
 	width: 100%;
 	background: black;
   overflow: hidden;
+  font-family: 'Nunito', sans-serif;
 }
 
 body {
   height: 100vh;
-  font-family: 'Roboto';
   background: black;
   display: grid;
   grid-template-columns: 10% 80% 10%;
   overflow: hidden;
-
 }
 
 .menu{
