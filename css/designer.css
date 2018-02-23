@@ -7,11 +7,14 @@ html {
 }
 
 body {
-	height: 100vh;	
+	height: 100vh;
+	width: 100%;
 	background: black;
 	display: grid;
 	grid-template-columns: 10% 80% 10%;
-	overflow: hidden;
+	padding: 0;
+	margin: 0;
+
 }
 .logo
 
@@ -22,6 +25,8 @@ body {
 	/*border: 1px dotted red;*/
 	display: grid;
 	grid-template-rows: 12% 40% 40% 8%; 
+	height: 100vh;
+	width: 100%;
 }
 
 .rightBar{
@@ -46,8 +51,12 @@ body {
 	border-bottom: 1px solid grey;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 3em;
 }
-.aboutText {
+
+#aboutText {
 	font-size: 1em;
 	align-self: start;
 	margin-top: 0;
@@ -77,4 +86,30 @@ body {
 span {
 	font-weight: 100;
 	font-size: .75em;
+}
+
+.slide {
+	color: white;
+	display: none;
+}
+
+.active {
+	display: block;
+}
+
+.right {
+	position: absolute;
+	left: 88%;
+	z-index: 99;
+}
+
+.left {
+	position: absolute;
+	right: 88%;
+	z-index: 99;
+}
+
+.slide object {
+	width: 45%;
+	height: auto;
 }

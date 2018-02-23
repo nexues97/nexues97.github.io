@@ -7,7 +7,8 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon"> 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width">
-	<script type="text/javascript" src="js/mainJs.js"></script>
+	<script type="text/javascript" src="javascript/designer.js" defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="leftBar">
@@ -21,13 +22,26 @@
 			<img src="profilePic.jpg" alt="Michael Ashley Pic">
 		</div>
 		<div class="aboutMe">
-			<div class="aboutText">
-				<p>Michael Ashley is a graduate of the Univeristy of Kentucky with a degree in Architecture. He has a passion for design and web development. Continuing to learn is important to Michael because with the ever evolving world a person needs to keep up on new technologies and methods.</p>
-				<p>In Michael's free time he enjoys going to concerts, enjoying a beer with friends, and playing computer games. Michael feels there needs to be a work life balance to get the best out of a person.</p>
+			<div>
+				<div class="slide active" id='aboutText'>
+					<p>I am a graduate of the Univeristy of Kentucky with a degree in Architecture. I have a passion for design and web development. Continuing to learn is important to me because with the ever evolving world a person needs to keep up on new technologies and methods.</p>
+					<p>In my free time I enjoys going to concerts, enjoying a beer with friends, and playing computer games. I feel there needs to be a work life balance to get the best out of a myself.</p>
+				</div>
+				<div class="slide">
+					<object data="images/html_logo.svg" type="image/svg+xml"></object>
+				</div>
+				<div class="slide">
+					<object data="images/css_logo.svg" type="image/svg+xml"></object>
+				</div>
+				<div class="slide">
+					<object data="images/js_logo.svg" type="image/svg+xml"></object>
+				</div>
+				<div class="slide">
+					<object data="images/rhino_logo.svg" type="image/svg+xml"></object>
+				</div>
 			</div>
-			<!--<div>
-				<img src="">
-			</div>-->
+			<button type="button" class="right">Right</button>
+			<button type="button" class="left">Left</button>
 		</div>
 		<div class="nextSection">
 			<a href="projects.html" class="sections"><span>02</span>__Projects</a>
