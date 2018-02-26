@@ -1,0 +1,92 @@
+body {
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+	padding: 0;
+	margin: 0;
+	background: black;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 100;
+}
+
+.logo {
+	position: absolute;
+	top: .5em;
+	left: .5em;
+	width: 9%;
+	height: auto;
+}
+
+.mainSection {
+	display: grid;
+	grid-template-rows: 15% 35% 40% 10%;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	border: 1px solid white;
+}
+
+.currentSection {
+	color: white;
+	text-decoration: none;
+	display: flex;
+	border: 1px solid white;
+}
+
+.sections {
+	padding: 0;
+	margin: 0;
+	align-self: flex-end;
+	padding-bottom: .5em;
+}
+
+.picture {
+	border: 1px solid white;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.picture img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.aboutMe {
+	display: flex;
+	border: 1px solid white;
+	text-align: center;
+	font-size: 1em;
+	justify-content: center;
+	align-items: center;
+	object-fit: contain;
+}
+
+.nextSection {
+	text-align: right;
+	border: 1px solid white;
+}
+
+.nextSection a {
+	color: white;
+	text-decoration: none;
+}
+
+.slide{
+	display: none;
+}
+
+.slide img {
+	width: auto;
+	height: 80%;
+}
+
+.active {
+	display: block;
+	color: white;
+	font-size: .8em;
+}
+
+span {
+	font-size: .75em;
+}
+

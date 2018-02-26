@@ -1,22 +1,22 @@
 html {
-	height: 100vh;
-	width: 100%;
+	/*height: 100vh;
+	width: 100%;*/
 	background: black;
 	overflow: hidden;
 	font-family: 'Nunito', sans-serif;
 }
 
 body {
-	height: 100vh;
-	width: 100%;
+	/*height: 100vh;
+	width: 100%;*/
 	background: black;
 	display: grid;
 	grid-template-columns: 10% 80% 10%;
 	padding: 0;
 	margin: 0;
-
 }
-.logo
+
+
 
 .leftBar {
 }
@@ -31,8 +31,8 @@ body {
 
 .rightBar{
 	/*border: 1px dotted red;*/
-	width: 100%
-	height: 100vh;
+	/*width: 100%
+	height: 100vh;*/
 }
 
 .picture, .aboutMe {
@@ -53,14 +53,14 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding-bottom: 3em;
+	position: relative;
+	border: 2px solid grey;
 }
 
 #aboutText {
 	font-size: 1em;
 	align-self: start;
-	margin-top: 0;
-	margin-bottom: 1em;
+	box-sizing: border-box;
 }
 
 .currentSection {
@@ -91,6 +91,16 @@ span {
 .slide {
 	color: white;
 	display: none;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 2px solid white;
+}
+
+.slide object{
+	width: 35%
+	height: auto;
 }
 
 .active {
@@ -112,4 +122,8 @@ span {
 .slide object {
 	width: 45%;
 	height: auto;
+}
+
+#aboutText {
+	color: white;
 }
