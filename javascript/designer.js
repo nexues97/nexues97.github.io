@@ -10,3 +10,14 @@ $('.aboutMe').click(function() {
 	}
 })
 
+$(document).on('click','.icon',function(){
+	$('.overlay').css('height', '100%');
+	$('.icon').css('display', 'none');
+})
+
+$(document).on('click','.close',function(){
+	
+	$('.overlay').css('height', '0%');
+	$('.icon').fadeIn(800).css('display', 'block');
+
+})

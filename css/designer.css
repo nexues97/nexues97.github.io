@@ -21,10 +21,12 @@ body {
 
 .icon {
 	position: absolute;
-	top: .5em;
-	right: .5em;
+	top: .06em;
+	right: .2em;
 	width: 9%;
 	height: auto;
+	color: #ffffff;
+	z-index: 99;
 }
 
 .mainSection {
@@ -101,14 +103,15 @@ body {
 
 span {
 	font-size: .75em;
+	padding-right: .15em;
 }
 
 /* Navigation Bar Styling */
 
 .overlay {
-	height: 100%;
+	height: 0%;
 	width: 100%;
-	display: none;
+	/*display: none;*/
 	position: fixed;
 	z-index: 1;
 	left: 0;
@@ -116,7 +119,7 @@ span {
 	background: rgb(255,255,255);
 	background: rgba(255,255,255,.85);
 	overflow-x: hidden;
-	transition: .05s;
+	transition: .5s;
 }
 
 .overlayContent {
@@ -132,6 +135,17 @@ span {
     text-decoration: none;
     color: black;
     padding: .05em;
+    font-weight: 300;
+}
+
+.close {
+	position: absolute;
+	top: .06em;
+	right: .2em;
+	width: 9%;
+	height: auto;
+	color: #000000;
+	z-index: 99;
 }
 
 
