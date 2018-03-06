@@ -1,14 +1,23 @@
-$('.aboutMe').click(function() {
-	var currentSlide = $('.slide.active');
-	var nextSlide = currentSlide.next();
+$(document).ready(function() {
+	checkSize();
+	$(window).resize(checkSize());
+});
 
-	currentSlide.removeClass('active');
-	nextSlide.addClass('active');
+function checkSize(){
+    if ($(".slide").css("display") !== "inline-block" ){
+        $('.aboutMe').click(function() {
+			var currentSlide = $('.slide.active');
+			var nextSlide = currentSlide.next();
 
-	if (nextSlide.length == 0) {
-		$('.slide').first().addClass('active');
-	}
-})
+			currentSlide.removeClass('active');
+			nextSlide.addClass('active');
+
+			if (nextSlide.length == 0) {
+				$('.slide').first().addClass('active');
+			}	
+		});
+    }
+};
 
 $(document).on('click','.icon',function(){
 	$('.overlay').css('height', '100%');
@@ -21,3 +30,4 @@ $(document).on('click','.close',function(){
 	$('.icon').fadeIn(800).css('display', 'block');
 
 })
+

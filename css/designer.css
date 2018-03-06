@@ -111,7 +111,6 @@ span {
 .overlay {
 	height: 0%;
 	width: 100%;
-	/*display: none;*/
 	position: fixed;
 	z-index: 1;
 	left: 0;
@@ -148,6 +147,36 @@ span {
 	z-index: 99;
 }
 
+/* Media qeury between 426px and 1024px */
+
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+
+	.slide {
+		display: inline-block;
+	}
+
+	 .logo {
+    	width: 2em;
+    	height: auto;
+  }
+}
+
+/* Media query over 1025px wide */
+
+@media screen and (min-width: 1025px) {
+
+	.overlay, .icon {
+		display: none;
+	}
+
+	.slide {
+		display: inline-block;
+	}
+
+	.logo {
+		width: 4em;
+	}
+}
 
 
 
