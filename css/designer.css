@@ -62,7 +62,7 @@ body {
 }
 
 .picture img {
-	max-width: 90%;
+	max-width: 99%;
 	max-height: 100%;
 }
 
@@ -151,19 +151,49 @@ span {
 
 @media screen and (min-width: 426px) and (max-width: 1024px) {
 
+	.aboutMe {
+		display: grid;
+		grid-template-rows: 50% 50%;
+		grid-template-columns: repeat(4, 25%);
+		padding: 0;
+		margin: 0;
+	}
+
 	.slide {
 		display: inline-block;
+	}
+
+	#aboutText {
+		font-size: .75em;
+		grid-column: 1 / 5;
+	}
+
+	#badge {
+		width: 5em;
+		height: auto;
 	}
 
 	 .logo {
     	width: 2em;
     	height: auto;
   }
+
+  	.overlay, .icon {
+		display: none;
+	}
 }
 
 /* Media query over 1025px wide */
 
 @media screen and (min-width: 1025px) {
+	
+	.aboutMe {
+		display: grid;
+		grid-template-rows: 50% 50%;
+		grid-template-columns: repeat(4, 25%);
+		padding: 0;
+		margin: 0;
+	}
 
 	.overlay, .icon {
 		display: none;
@@ -171,6 +201,16 @@ span {
 
 	.slide {
 		display: inline-block;
+	}
+
+	#aboutText {
+		font-size: 1em;
+		grid-column: 1 / 5;
+	}
+
+	#badge {
+		width: 5em;
+		height: auto;
 	}
 
 	.logo {
