@@ -161,6 +161,7 @@ span {
 
 	.slide {
 		display: inline-block;
+		color: white;
 	}
 
 	#aboutText {
@@ -177,10 +178,6 @@ span {
     	width: 2em;
     	height: auto;
   }
-
-  	.overlay, .icon {
-		display: none;
-	}
 }
 
 /* Media query over 1025px wide */
@@ -195,12 +192,9 @@ span {
 		margin: 0;
 	}
 
-	.overlay, .icon {
-		display: none;
-	}
-
 	.slide {
 		display: inline-block;
+		color: white;
 	}
 
 	#aboutText {
