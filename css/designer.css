@@ -62,8 +62,9 @@ body {
 }
 
 .picture img {
-	max-width: 99%;
+	max-width: 98%;
 	max-height: 100%;
+	border-radius: 50%;
 }
 
 .aboutMe {
@@ -98,12 +99,34 @@ body {
 .active {
 	display: block;
 	color: white;
-	font-size: .8em;
+	font-size: .7em;
 }
 
 span {
 	font-size: .75em;
 	padding-right: .15em;
+}
+
+.leftArrow {
+	position: absolute;
+	bottom: 30%;
+	left: 4%;
+	color: #ffffff;
+}
+
+.rightArrow {
+	position: absolute;
+	bottom: 30%;
+	right: 4%;
+	color: #ffffff;
+}
+
+strong:hover {
+	color: rgb(0,51,160);
+}
+
+.fullNav {
+	display: none;
 }
 
 /* Navigation Bar Styling */
@@ -174,9 +197,13 @@ span {
 		height: auto;
 	}
 
-	 .logo {
+	.logo {
     	width: 2em;
     	height: auto;
+  }
+
+  	.rightArrow, .leftArrow {
+  		display: none;
   }
 }
 
@@ -208,8 +235,43 @@ span {
 	}
 
 	.logo {
-		width: 4em;
+		width: 4.25em;
 	}
+
+	.rightArrow, .leftArrow {
+  		display: none;
+  	}
+
+  	.icon, .overlay {
+  		display: none;
+  	}
+
+  	.fullNav {
+  		display: flex;
+  		flex-direction: column;
+  		position: absolute;
+  		top: 50%;
+  	}
+
+  	.fullNavEle a{
+  		color: white;
+  		text-decoration: none;
+  	}
+
+  	.eleHover {
+  		-webkit-transition: all .65s ease-in;
+  		-moz-transition: all .65s ease-in;
+  		-o-transition: all .65s ease-in;
+  		transition: all .65s ease-in;
+  		transform: translateX(20px);
+  		visibility: hidden;
+  	}
+
+  	.fullNavEle:hover .eleHover {
+  		display: inline-block;
+  		visibility: visible;
+  		transform: translateY(0);
+  	}
 }
 
 

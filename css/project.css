@@ -1,0 +1,146 @@
+/* Main Content Styling*/
+
+body {
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+	padding: 0;
+	margin: 0;
+	background: black;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 100;
+	overflow-x: hidden;
+}
+
+.logo {
+	position: absolute;
+	top: .5em;
+	left: .5em;
+	width: 9%;
+	height: auto;
+}
+
+.icon {
+	position: absolute;
+	top: .06em;
+	right: .2em;
+	width: 9%;
+	height: auto;
+	color: #ffffff;
+	z-index: 99;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fullNav {
+	display: none;
+}
+
+/* Navigation Bar Styling */
+
+.overlay {
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0
+	background: rgb(255,255,255);
+	background: rgba(255,255,255,.85);
+	overflow-x: hidden;
+	transition: .5s;
+}
+
+.overlayContent {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+    text-align: center;
+	top: 40%;
+    width: 100%;
+    font-size: 2em;
+}
+.overlayContent a {
+    text-decoration: none;
+    color: black;
+    padding: .05em;
+    font-weight: 300;
+}
+
+.close {
+	position: absolute;
+	top: .06em;
+	right: .2em;
+	width: 9%;
+	height: auto;
+	color: #000000;
+	z-index: 99;
+}
+
+
+
+@media screen and (min-width: 1025px) {
+	.logo {
+		width: 4.25em;
+	}
+
+	.rightArrow, .leftArrow {
+  		display: none;
+  	}
+
+  	.icon, .overlay {
+  		display: none;
+  	}
+
+  	.fullNav {
+  		display: flex;
+  		flex-direction: column;
+  		position: absolute;
+  		top: 50%;
+  	}
+
+  	.fullNavEle a{
+  		color: white;
+  		text-decoration: none;
+  	}
+
+  	.eleHover {
+  		-webkit-transition: all .65s ease-in;
+  		-moz-transition: all .65s ease-in;
+  		-o-transition: all .65s ease-in;
+  		transition: all .65s ease-in;
+  		transform: translateX(20px);
+  		visibility: hidden;
+  	}
+
+  	.fullNavEle:hover .eleHover {
+  		display: inline-block;
+  		visibility: visible;
+  		transform: translateY(0);
+  	}
+}
