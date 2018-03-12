@@ -29,6 +29,57 @@ body {
 	z-index: 99;
 }
 
+.mainSection {
+	display: grid;
+	grid-template-rows: 15% 4fr 10%;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	/*border: 1px solid white;*/
+}
+
+.currentSection {
+	color: white;
+	text-decoration: none;
+	display: flex;
+	border-bottom: 1px solid grey;
+}
+
+.sections {
+	padding: 0;
+	margin: 0;
+	align-self: flex-end;
+	padding-bottom: .5em;
+}
+
+.project img {
+	max-width: 100%;
+	max-height: auto;
+}
+
+.projectList ul {
+	list-style-type: none;
+	color: white;
+	align-self: center;
+	padding-left: 0;
+	font-size: .75em;
+	text-align: center;
+}
+
+.nextSection {
+	text-align: right;
+	border-top: 1px solid grey;
+	/*border: 1px solid white;*/
+}
+
+.nextSection a {
+	color: white;
+	text-decoration: none;
+}
+
+
+
+
 
 
 
