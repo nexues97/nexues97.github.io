@@ -1,6 +1,7 @@
 /* Main Content Styling*/
 
 body {
+
 	display: grid;
 	grid-template-columns: 10% 80% 10%;
 	padding: 0;
@@ -12,6 +13,7 @@ body {
 }
 
 .logo {
+
 	position: absolute;
 	top: .5em;
 	left: .5em;
@@ -20,16 +22,18 @@ body {
 }
 
 .icon {
+
 	position: absolute;
 	top: .06em;
 	right: .2em;
 	width: 9%;
 	height: auto;
 	color: #ffffff;
-	z-index: 99;
+	z-index: 98;
 }
 
 .mainSection {
+
 	display: grid;
 	grid-template-rows: 15% 4fr 10%;
 	height: 100vh;
@@ -39,6 +43,7 @@ body {
 }
 
 .currentSection {
+
 	color: white;
 	text-decoration: none;
 	display: flex;
@@ -46,6 +51,7 @@ body {
 }
 
 .sections {
+
 	padding: 0;
 	margin: 0;
 	align-self: flex-end;
@@ -53,11 +59,13 @@ body {
 }
 
 .project img {
+
 	max-width: 100%;
 	max-height: auto;
 }
 
 .projectList ul {
+
 	list-style-type: none;
 	color: white;
 	align-self: center;
@@ -67,54 +75,94 @@ body {
 }
 
 .nextSection {
+
 	text-align: right;
 	border-top: 1px solid grey;
 	/*border: 1px solid white;*/
 }
 
 .nextSection a {
+
 	color: white;
 	text-decoration: none;
 }
 
+.gallery1, .gallery2, .gallery3, .gallery4 {
 
+	display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 98; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+}
 
+.slide {
 
+	display: none;
+}
 
+.active {
 
+	display: block;
+}
 
+.active img {
 
+	display: flex;
+	width: 100%;
+	align-self: center;
+}
 
+.leftArrow {
 
+	position: absolute;
+	left: 2%;
+	top: 50%;
+	color: #000000;
+	
+}
 
+.rightArrow {
 
+	position: absolute;
+	right: 2%;
+	top: 50%;
+	color: #000000;
+	
+}
 
+.fa-times-circle {
 
+	position: absolute;
+	top: .065em;
+	right: .2em;
+	width: 9%;
+	height: auto;
+	color: #ffffff;
+	z-index: 98;
+}
 
+.projectSlides {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	display: flex;
+	align-self: center;
+}
 
 .fullNav {
+
 	display: none;
 }
 
 /* Navigation Bar Styling */
 
 .overlay {
+
 	height: 0%;
 	width: 100%;
 	position: fixed;
@@ -128,6 +176,7 @@ body {
 }
 
 .overlayContent {
+
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -136,7 +185,9 @@ body {
     width: 100%;
     font-size: 2em;
 }
+
 .overlayContent a {
+
     text-decoration: none;
     color: black;
     padding: .05em;
@@ -144,6 +195,7 @@ body {
 }
 
 .close {
+
 	position: absolute;
 	top: .06em;
 	right: .2em;
@@ -156,19 +208,19 @@ body {
 
 
 @media screen and (min-width: 1025px) {
+
 	.logo {
+
 		width: 4.25em;
 	}
 
-	.rightArrow, .leftArrow {
-  		display: none;
-  	}
-
   	.icon, .overlay {
+
   		display: none;
   	}
 
   	.fullNav {
+
   		display: flex;
   		flex-direction: column;
   		position: absolute;
@@ -176,11 +228,32 @@ body {
   	}
 
   	.fullNavEle a{
+
   		color: white;
   		text-decoration: none;
   	}
 
+  	.mainSection {
+
+  		display: grid;
+  		grid-template-rows: 7% 1fr 7%;
+  	}
+
+  	.projectList {
+  		display: grid;
+  		grid-template-columns: 50% 50%;
+  		grid-template-rows: 50% 50%;
+  	}
+
+  	.projectList img {
+  		display: block;
+  		width: 70%;
+  		height: 70%;
+  		margin: auto;
+  	}
+
   	.eleHover {
+
   		-webkit-transition: all .65s ease-in;
   		-moz-transition: all .65s ease-in;
   		-o-transition: all .65s ease-in;
@@ -190,8 +263,31 @@ body {
   	}
 
   	.fullNavEle:hover .eleHover {
+
   		display: inline-block;
   		visibility: visible;
   		transform: translateY(0);
   	}
+
+  	.slide img {
+
+  		width: 75%;
+  		margin: auto;
+  	}
+
+  	.leftArrow {
+
+		position: absolute;
+		left: 2%;
+		color: #ffffff;
+		align-self: center;
+	}
+
+	.rightArrow {
+
+		position: absolute;
+		right: 2%;
+		color: #ffffff;
+		align-self: center;
+	}
 }
