@@ -114,7 +114,6 @@ body {
 
 .active img {
 
-	display: flex;
 	width: 100%;
 	align-self: center;
 }
@@ -206,6 +205,42 @@ body {
 }
 
 
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+
+	.logo {
+		
+    	width: 2em;
+    	height: auto;
+  }
+
+    .mainSection {
+
+  		display: grid;
+  		grid-template-rows: 7% 1fr 7%;
+  	}
+
+  	.projectList {
+
+  		display: grid;
+  		grid-template-columns: 50% 50%;
+  		grid-template-rows: 50% 50%;
+  		grid-gap: 1em 1em;
+  		align-items: center;
+  	}
+
+  	.projectList img {
+
+  		width: 100%;
+  		margin: auto;
+  	}
+
+  	ul li{
+
+  		font-size: 1.6em;
+  	}
+}
+
+
 
 @media screen and (min-width: 1025px) {
 
@@ -269,10 +304,8 @@ body {
   		transform: translateY(0);
   	}
 
-  	.slide img {
-
-  		width: 75%;
-  		margin: auto;
+  	.active {
+  		width: 75%
   	}
 
   	.leftArrow {
@@ -289,5 +322,10 @@ body {
 		right: 2%;
 		color: #ffffff;
 		align-self: center;
+	}
+
+	.projectSlides {
+		display: flex;
+		justify-content: center;
 	}
 }
