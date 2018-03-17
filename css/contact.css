@@ -57,43 +57,44 @@ body {
 
 /* Contact Form */
 
+#captcha button {
+  padding-bottom: 0px;
+}
+
 #contact {
     overflow: auto;
     display: flex;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 #contact #form {
-    width:410px;
-    float:left;
+    width: 25em;
 }
 #contact #form h2 {
 	color: white;
-    font: 48px 'Bree Serif', Georgia, serif;
 }
+
 #contact #form span {
-    display:block;
-    float:left;
-    width:100px;
-    padding-top:5px;
     color: white;
-    font: 14px/16px'Bree Serif', Georgia, serif;
 }
+
 #contact #form input {
     float:left;
-    width:255px;
+    width: 55%;
+    height: 2em;
     border:0px;
     color:#F1F1F1;
-    padding:10px 10px 10px 30px;
-    font: 11px/20px'Open Sans', Verdana, Helvetica, sans-serif;
-    margin-bottom:10px;
+    padding:10px 10px 0px 30px;
+    margin-bottom:5px;
 }
+
 #contact #form textarea {
     float:left;
     border:0px;
-    width:255px;
-    height:140px;
+    width: 55%;
+    height: 7em;
     padding:10px 10px 10px 30px;
-    font: 11px/20px'Open Sans', Verdana, Helvetica, sans-serif;
     color:#F1F1F1;
     resize: none;
 }
@@ -118,15 +119,16 @@ body {
     margin:10px 16px 0px 0px;
     background:#222222;
     color:#F1F1F1;
-    font: 14px/16px'Bree Serif', Georgia, serif;
 }
+
 #contact #captcha span{
     width: 44px;
 }
+
 #contact #captcha input{
     background: url(http://img3.uploadhouse.com/fileuploads/17737/17737011310213e71805ecf2292144cbbecf42ad.png) no-repeat scroll 0 0 transparent;
     margin: 5px 0 0;
-    padding: 0;
+    padding-right: .5em;
     border: medium none;
     cursor: pointer;
     width: 15px;
